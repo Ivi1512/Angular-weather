@@ -1,0 +1,9 @@
+
+<h2> {{ 'Temperatura actual: ' | uppercase }}</h2>
+
+<ul *ngIf="data && data.main">
+  <li> temp max: {{ data.main.temp_max | temp }} </li>
+  <li> temp min: {{ data.main.temp_min | temp }} </li>
+  <li> hum: {{ data.main.humidity }}  </li>
+  <li> presion: {{ data.main.pressure }} </li>
+</ul>
